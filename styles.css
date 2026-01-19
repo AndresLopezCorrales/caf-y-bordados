@@ -5,8 +5,19 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 h1 {
     color: #6b2103;
+}
+
+h2 {
+    color: #a83e13;
+    margin-bottom: 1rem;
 }
 
 img:hover {
@@ -14,46 +25,46 @@ img:hover {
     transition: transform 0.3s ease;
 }
 
-#logo-nav {
+.logo-link {
     width: 6rem;
     height: auto;
     margin-right: 1vw;
     border-radius: 20rem;
 }
 
-#navbar {
+.main-header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #6b2103;
     width: 100%;
-    padding: 4vh 0;
+    padding: 1.5rem 0;
 }
 
-#nav-buttons {
+.main-nav {
     display: flex;
     flex-direction: row;
-    gap: 2vw;
+    gap: 2rem;
     width: 100%;
     justify-content: center;
 }
 
-#navbar button {
+.main-header button {
     background: none;
     border: none;
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
-    padding: 1vh 2vw;
+    padding: 1rem 2rem;
     border-radius: 5px;
 }
 
-#navbar button:hover {
+.main-header button:hover {
     background-color: #a83e13;
 }
 
 
-#inicio-div {
+#inicio {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -71,7 +82,7 @@ img:hover {
 }
 
 #parrafo-titulo-div {
-    margin-top: 2vh;
+    margin-top: 2rem;
     font-size: 1.2rem;
     justify-content: center;
     width: 65%;
@@ -109,7 +120,7 @@ img:hover {
 #cafes-disponibles-div img {
     width: 18rem;
     height: 16rem;
-    padding: 2vh;
+    padding: 2rem;
     border-radius: 50px;
     object-fit: cover;
 
@@ -131,9 +142,9 @@ img:hover {
     padding: 5%;
 }
 
-#bordado-img-div button {
-    margin-top: 2vh;
-    padding: 1vh 2vw;
+#bordado-img-div a.button-link {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
     font-size: 1.2rem;
     background-color: #6b2103;
     color: white;
@@ -142,7 +153,7 @@ img:hover {
     cursor: pointer;
 }
 
-#bordado-img-div button:hover {
+#bordado-img-div a.button-link:hover {
     background-color: #a83e13;
 }
 
@@ -176,7 +187,7 @@ img:hover {
 #bordado-imgs-div img {
     width: 16rem;
     height: 16rem;
-    margin: 2vh;
+    margin: 2rem;
     border-radius: 20px;
     object-fit: cover;
 }
@@ -184,17 +195,17 @@ img:hover {
 
 @media (max-width: 768px) {
 
-    #navbar {
-        padding: 2vh 0;
+    .main-header {
+        padding: 2rem 0;
     }
 
-    #nav-buttons {
+    .main-nav {
         flex-direction: column;
-        padding: 2vh 0;
+        padding: 2rem 0;
         align-items: center;
     }
 
-    #inicio-div {
+    #inicio {
         flex-direction: column;
         align-items: center;
     }
@@ -219,5 +230,33 @@ img:hover {
 
     #bordado-imgs-div {
         flex-direction: column;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    #inicio-div {
+        padding: 2rem;
+    }
+
+    #parrafo-titulo-div {
+        width: 85%;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo-nav {
+        width: 4rem;
+    }
+
+    #navbar button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    #cafes-disponibles-div img {
+        width: 100%;
+        height: 12rem;
     }
 }

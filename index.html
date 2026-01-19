@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Café y bordados. Café artesanal y bordados creativos">
     <title>Café y Bordados</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="img/logo_cyb.png">
@@ -12,73 +13,79 @@
 
 <body>
 
-    <nav id="navbar">
-        <div id="nav-buttons">
-            <a href="#inicio-div"><img id="logo-nav" src="img/logo_cyb.png" alt="logo café y bordados"></a>
-            <button onclick="navegar('inicio-div')">Inicio</button>
-            <button onclick="navegar('cafes-div')">Cafés</button>
-            <button onclick="navegar('bordados-div')">Bordados</button>
-        </div>
-    </nav>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#inicio-div"><img class="logo-link" src="img/logo_cyb.png" alt="logo café y bordados"></a>
+            <button class="nav-btn" data-target="inicio-div">Inicio</button>
+            <button class="nav-btn" data-target="cafes-div">Cafés</button>
+            <button class="nav-btn" data-target="bordados-div">Bordados</button>
+        </nav>
+    </header>
 
-    <div id="inicio-div">
-        <div id="titulo-div">
-            <h1>Café y bordados</h1>
-            <div id="parrafo-titulo-div">
-                <p>
-                    Un espacio donde el buen café y la creatividad se encuentran.
-                    Disfruta de cafés seleccionados con gran sabor y aroma, mientras exploras el arte del bordado en un
-                    ambiente cálido y relajante.
 
-                    En Café y Bordados puedes venir a disfrutar una bebida, aprender algo nuevo o simplemente
-                    desconectarte
-                    de la rutina. Ofrecemos talleres, materiales y experiencias pensadas para que cada visita sea
-                    especial.
-                </p>
+    <main>
+        <section id="inicio" class="hero" aria-labelledby="titulo-principal">
+            <header id="titulo-div" class="container">
+                <h1 class="hero-title">Café y bordados</h1>
+                <div id="parrafo-titulo-div" class="hero-description">
+                    <p>
+                        Un espacio donde el buen café y la creatividad se encuentran.
+                        Disfruta de cafés seleccionados con gran sabor y aroma, mientras exploras el arte del bordado en
+                        un
+                        ambiente cálido y relajante.
+
+                        En Café y Bordados puedes venir a disfrutar una bebida, aprender algo nuevo o simplemente
+                        desconectarte
+                        de la rutina. Ofrecemos talleres, materiales y experiencias pensadas para que cada visita sea
+                        especial.
+                    </p>
+                </div>
+            </header>
+
+            <div id="img-div" class="hero-image">
+                <a href="https://www.instagram.com/la_casa_del_bordadito?igsh=enUyOG55NDE1OGRu" target="_blank"
+                    rel="noopener noreferrer" title="Sorpresa"><img src="img/logo_cyb.png" alt="logo café y bordados">
+                </a>
             </div>
-        </div>
-        <div id="img-div">
-            <a href="https://www.instagram.com/la_casa_del_bordadito?igsh=enUyOG55NDE1OGRu" target="_blank"
-                rel="noopener noreferrer" title="Sorpresa"><img src="img/logo_cyb.png" alt="logo café y bordados">
-            </a>
-        </div>
-    </div>
 
-    <div id="cafes-div">
-        <div>
-            <h1>Cafés Dispónibles</h1>
-        </div>
+        </section>
 
-        <div id="cafes-disponibles-div">
-            <img src="img/cafe/4GI-0z5K2i4_coffee.jpg" alt="imagen cafe random">
-            <img src="img/cafe/QDTtF7ewaak_coffee.jpg" alt="imagen cafe random">
-            <img src="img/cafe/VwZyfdlvUWw_coffee.jpg" alt="imagen cafe random">
-            <img src="img/cafe/_JOiT2NsV1A_coffee.jpg" alt="imagen cafe random">
-            <img src="img/cafe/bTzk95h707g_coffee.jpg" alt="imagen cafe random">
-            <img src="img/cafe/hgjpLGClejo_coffee.jpg" alt="imagen cafe random">
-        </div>
-    </div>
-
-    <div id="bordados-div">
-        <div id="bordado-img-div">
-            <img src="img/bordado/abejas_bordado.jpg" alt="imagen bordado cafe">
-            <a href="https://www.instagram.com/la_casa_del_bordadito?igsh=enUyOG55NDE1OGRu" target="_blank"
-                rel="noopener noreferrer"><button>Comprar Bordados</button></a>
-
-        </div>
-
-        <div id="bordados-disponibles-div">
-            <div id="bordados-disponibles-titulo-div">
-                <h1>Bordados Disponibles</h1>
+        <section id="cafes-div" class="hero" aria-labelledby="cafes-titulo">
+            <h2 class="hero-title">Cafés Dispónibles</h2>
+            <div id="cafes-disponibles-div" class="hero-image">
+                <img src="img/cafe/4GI-0z5K2i4_coffee.jpg" alt="taza de café">
+                <img src="img/cafe/QDTtF7ewaak_coffee.jpg" alt="granos de café">
+                <img src="img/cafe/VwZyfdlvUWw_coffee.jpg" alt="taza donde le cae un chorro de café">
+                <img src="img/cafe/_JOiT2NsV1A_coffee.jpg" alt="café con diseño de una flor">
+                <img src="img/cafe/bTzk95h707g_coffee.jpg" alt="preparación de café con diseño">
+                <img src="img/cafe/hgjpLGClejo_coffee.jpg" alt="taza de café con vapor">
             </div>
-            <div id="bordado-imgs-div">
-                <img src="img/bordado/bordado.jpg" alt="imagen bordado random">
-                <img src="img/bordado/flores_bordado.jpg" alt="imagen bordado random">
-                <img src="img/bordado/rosa_bordado.jpg" alt="imagen bordado random">
-            </div>
-        </div>
-    </div>
 
+        </section>
+
+        <section id="bordados-div" class="hero" aria-labelledby="bordados-titulo">
+            <div id="bordado-img-div" class="hero-image">
+                <img src="img/bordado/abejas_bordado.jpg" alt="imagen bordado cafe">
+                <a href="https://www.instagram.com/la_casa_del_bordadito?igsh=enUyOG55NDE1OGRu" target="_blank"
+                    rel="noopener noreferrer" class="button-link">Comprar Bordados</a>
+
+            </div>
+
+            <div id="bordados-disponibles-div" class="hero-image">
+                <div id="bordados-disponibles-titulo-div">
+                    <h1>Bordados Disponibles</h1>
+                </div>
+                <div id="bordado-imgs-div">
+                    <img src="img/bordado/bordado.jpg" alt="imagen bordado de hojas">
+                    <img src="img/bordado/flores_bordado.jpg" alt="imagen bordado de flores">
+                    <img src="img/bordado/rosa_bordado.jpg" alt="imagen bordado de flores multicolor">
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
 
     <script src="button_scripts.js"></script>
 </body>
