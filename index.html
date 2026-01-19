@@ -15,19 +15,20 @@
 
     <header class="main-header">
         <nav class="main-nav">
-            <a href="#inicio-div"><img class="logo-link" src="img/logo_cyb.png" alt="logo café y bordados"></a>
-            <button class="nav-btn" data-target="inicio-div">Inicio</button>
-            <button class="nav-btn" data-target="cafes-div">Cafés</button>
-            <button class="nav-btn" data-target="bordados-div">Bordados</button>
+            <a href="#inicio"><img class="logo-link" src="img/logo_cyb.png" alt="logo café y bordados"></a>
+            <button class="nav-btn" data-target="inicio">Inicio</button>
+            <button class="nav-btn" data-target="cafes">Cafés</button>
+            <button class="nav-btn" data-target="bordados">Bordados</button>
         </nav>
     </header>
 
 
     <main>
-        <section id="inicio" class="hero" aria-labelledby="titulo-principal">
-            <header id="titulo-div" class="container">
+        <!--SECCIÓN HERO-->
+        <section id="inicio" class="section hero" aria-labelledby="titulo-principal">
+            <div class="container hero-text">
                 <h1 class="hero-title">Café y bordados</h1>
-                <div id="parrafo-titulo-div" class="hero-description">
+                <div class="hero-description">
                     <p>
                         Un espacio donde el buen café y la creatividad se encuentran.
                         Disfruta de cafés seleccionados con gran sabor y aroma, mientras exploras el arte del bordado en
@@ -40,9 +41,9 @@
                         especial.
                     </p>
                 </div>
-            </header>
+            </div>
 
-            <div id="img-div" class="hero-image">
+            <div class="hero-image">
                 <a href="https://www.instagram.com/la_casa_del_bordadito?igsh=enUyOG55NDE1OGRu" target="_blank"
                     rel="noopener noreferrer" title="Sorpresa"><img src="img/logo_cyb.png" alt="logo café y bordados">
                 </a>
@@ -50,9 +51,12 @@
 
         </section>
 
-        <section id="cafes-div" class="hero" aria-labelledby="cafes-titulo">
-            <h2 class="hero-title">Cafés Dispónibles</h2>
-            <div id="cafes-disponibles-div" class="hero-image">
+        <!-- SECCIÓN DE CAFÉS -->
+
+        <section id="cafes" class="section cafes" aria-labelledby="cafes-titulo">
+            <h2 class="section-title">Cafés Dispónibles</h2>
+
+            <div class="grid images-grid">
                 <img src="img/cafe/4GI-0z5K2i4_coffee.jpg" alt="taza de café">
                 <img src="img/cafe/QDTtF7ewaak_coffee.jpg" alt="granos de café">
                 <img src="img/cafe/VwZyfdlvUWw_coffee.jpg" alt="taza donde le cae un chorro de café">
@@ -63,19 +67,21 @@
 
         </section>
 
-        <section id="bordados-div" class="hero" aria-labelledby="bordados-titulo">
-            <div id="bordado-img-div" class="hero-image">
+
+        <!-- SECCIÓN DE BORDADOS -->
+        <section id="bordados" class="section bordados" aria-labelledby="bordados-titulo">
+            <div class="bordado-main">
                 <img src="img/bordado/abejas_bordado.jpg" alt="imagen bordado cafe">
                 <a href="https://www.instagram.com/la_casa_del_bordadito?igsh=enUyOG55NDE1OGRu" target="_blank"
-                    rel="noopener noreferrer" class="button-link">Comprar Bordados</a>
-
+                    rel="noopener noreferrer" class="button-link">
+                    Comprar Bordados</a>
             </div>
 
-            <div id="bordados-disponibles-div" class="hero-image">
-                <div id="bordados-disponibles-titulo-div">
-                    <h1>Bordados Disponibles</h1>
-                </div>
-                <div id="bordado-imgs-div">
+            <div class="bordados-list">
+
+                <h2 class="section-title">Bordados Disponibles</h2>
+
+                <div class="grid images-grid">
                     <img src="img/bordado/bordado.jpg" alt="imagen bordado de hojas">
                     <img src="img/bordado/flores_bordado.jpg" alt="imagen bordado de flores">
                     <img src="img/bordado/rosa_bordado.jpg" alt="imagen bordado de flores multicolor">
