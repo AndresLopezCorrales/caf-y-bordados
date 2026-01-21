@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Café y bordados. Café artesanal y bordados creativos">
     <title>Café y Bordados</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/png" href="img/logo_cyb.png">
 
 </head>
@@ -19,6 +19,11 @@
             <button class="nav-btn" data-target="inicio">Inicio</button>
             <button class="nav-btn" data-target="cafes">Cafés</button>
             <button class="nav-btn" data-target="bordados">Bordados</button>
+            <a href="views/cart.html" id="anchor-cart-icon">
+                <img class="logo-link" src="img/carrito/cart.png" alt="imagen de carro de compras"
+                    title="carro de compras">
+                <span class="cart-count">0</span>
+            </a>
         </nav>
     </header>
 
@@ -67,6 +72,16 @@
 
         </section>
 
+        <!--SECCION DE CAFÉS API-->
+        <section id="cafes-api" class="section cafes" aria-labelledby="cafes-api-titulo">
+            <div class="api-section">
+                <h2 class="section-title">Más Cafés</h2>
+                <div id="api-coffees" class="grid images-grid">
+                    <!-- IMAGENES CAFÉ API -->
+                </div>
+            </div>
+        </section>
+
 
         <!-- SECCIÓN DE BORDADOS -->
         <section id="bordados" class="section bordados" aria-labelledby="bordados-titulo">
@@ -93,7 +108,9 @@
 
     </main>
 
-    <script src="button_scripts.js"></script>
+    <script src="../js/button_scripts.js"></script>
+    <script type="module" src="../js/coffee_api_consumer.js"></script>
+    <script src="../js/cart_counter.js"></script>
 </body>
 
 </html>
